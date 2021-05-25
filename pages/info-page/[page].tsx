@@ -44,8 +44,8 @@ export const getStaticProps: GetStaticProps = async (context: any) => {
 
 export async function getStaticPaths(context: any) {
   return {
-    paths: [{ params: { page: "אאא_1" } }, { params: { page: "אאא_2" } }],
-    //paths: [{ params: { page: "page1" } }, { params: { page: "page2" } }],
+    //paths: [{ params: { page: "אאא_1" } }, { params: { page: "אאא_2" } }],
+    paths: [{ params: { page: "page1" } }, { params: { page: "page2" } }],
     fallback: true,
   };
 }
