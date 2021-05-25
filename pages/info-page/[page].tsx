@@ -39,9 +39,6 @@ export const getStaticProps: GetStaticProps = async (context: any) => {
     //"https://raw.githubusercontent.com/onezero-team/unescaped_characters_error_cms/main/cms.json"
   );
   const data = await resp.json();
-  console.log(data);
-  //page = data[page];
-  //console.log(page);
   return { props: { data }, revalidate: 1 };
 };
 
